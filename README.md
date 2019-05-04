@@ -1,7 +1,7 @@
 # Deluge
 Deluge is a popular multi-platform bittorrent client often used to provide torrenting / seedbox functionality on Linux servers. Like rTorrent, deluge uses libtorrent as its backend. Supported by daemon-service, awesome interface, and great plugin support, Deluge surpass Transmission and rTorrent for functionality.
 
-#Install Deluge on Ubuntu 18.04 LTS Bionic Beaver
+# Install Deluge on Ubuntu 18.04 LTS Bionic Beaver
 Step 1. First make sure that all your system packages are up-to-date by running these following apt-get commands in the terminal.
     sudo apt-get update
     sudo apt-get update
