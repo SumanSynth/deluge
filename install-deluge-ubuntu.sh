@@ -50,7 +50,7 @@ EOF
 echo "****************************************************"
 echo "Starting deluged.service "
 echo "****************************************************"
-
+systemctl daemon-reload
 systemctl start deluged
 systemctl enable deluged
 
@@ -81,7 +81,7 @@ EOF
 echo "****************************************************"
 echo "Starting deluge-web.service"
 echo "****************************************************"
-
+systemctl daemon-reload
 systemctl start deluge-web
 systemctl enable deluge-web
 
