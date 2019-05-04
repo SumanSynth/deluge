@@ -16,7 +16,7 @@ echo "****************************************************"
 echo "Installing Deluge Bittorrent Client with Web Interface"
 echo "****************************************************"
 
-sudo apt install deluged deluge-webui
+sudo apt install deluged deluge-webui curl
 sudo adduser --system --group deluge
 sudo gpasswd -a $USER deluge
 
@@ -86,5 +86,9 @@ systemctl start deluge-web
 systemctl enable deluge-web
 
 echo "****************************************************"
-echo "Deluge will be available on HTTP port 8112 by default. Open your favorite browser and navigate to http://yourdomain.com:8112 or http://server-ip:8112. The default password for deluge is deluge, better change it when you are first to login."
+echo "Deluge will be available on HTTP port 8112 by default." 
+echo "http://server-ip:8112."
+echo "Your IP address is:"
+curl ifconfig.me
+echo "The default password for deluge is deluge."
 echo "****************************************************"
