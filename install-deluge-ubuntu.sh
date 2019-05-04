@@ -87,9 +87,11 @@ systemctl enable deluge-web
 
 echo "****************************************************"
 echo "Deluge will be available on HTTP port 8112 by default." 
-echo "http://server-ip:8112."
+echo " "
 echo "Your IP address is:"
+echo " "
 curl ifconfig.me
 echo ":8112"
+echo " "
 echo "The default password for deluge is deluge."
 echo "****************************************************"
