@@ -10,7 +10,7 @@ echo "****************************************************"
 echo "Adding ppa:deluge-team/ppa"
 echo "****************************************************"
 
-sudo add-apt-repository ppa:deluge-team/ppa
+sudo add-apt-repository -y ppa:deluge-team/ppa
 
 echo "****************************************************"
 echo "Installing Deluge Bittorrent Client with Web Interface"
@@ -18,7 +18,7 @@ echo "****************************************************"
 
 sudo apt-get -yq install deluged deluge-webui curl
 sudo adduser --system --group deluge
-sudo gpasswd -a $USER deluge
+sudo gpasswd -a "$USER" deluge
 
 echo "****************************************************"
 echo "Creating deluged.service"
