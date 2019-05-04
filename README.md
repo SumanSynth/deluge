@@ -11,21 +11,20 @@ Deluge will be available on HTTP port 8112 by default. Open your favorite browse
 
 ### Check services
 
-    sudo systemctl status deluge-web
+    sudo systemctl status deluged
     sudo systemctl status deluge-web
 
 ## Method 2: Step by step guide
-Step 1. First make sure that all your system packages are up-to-date by running these following apt-get commands in the terminal.
+#### Step 1. First make sure that all your system packages are up-to-date by running these following apt-get commands in the terminal.
 
     sudo apt-get update
-    sudo apt-get update
-Step 2. Installing Deluge on Ubuntu 18.04 LTS.
+#### Step 2. Installing Deluge on Ubuntu 18.04 LTS.
 
     sudo add-apt-repository ppa:deluge-team/ppa
     sudo apt install deluged deluge-webui
     sudo adduser --system --group deluge
     sudo gpasswd -a idroot deluge
-Step 3. Create Systemd Service.
+#### Step 3. Create Systemd Service.
 
     nano /etc/systemd/system/deluged.service
 Add following lines:
@@ -81,5 +80,5 @@ Save and close the file also start and enable deluge-web:
     systemctl start deluge-web
     systemctl enable deluge-web
 
-Step 4. Accessing Deluge.
+#### Step 4. Accessing Deluge.
 Deluge will be available on HTTP port 8112 by default. Open your favorite browser and navigate to http://yourdomain.com:8112 or http://server-ip:8112.  The default password for deluge is deluge, better change it when you are first to login.
