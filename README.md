@@ -15,7 +15,10 @@ Deluge will be available on HTTP port 8112 by default. Open your favorite browse
     sudo systemctl status deluged
     sudo systemctl status deluge-web
 
+#### Uninstall Deluge
+Run following command in terminal
 
+    wget https://raw.githubusercontent.com/sumancvb/deluge/master/uninstall-deluge-ubuntu.sh && sudo sh uninstall-deluge-ubuntu.sh
 ## Method 2: Step by step guide
 #### Step 1. First make sure that all your system packages are up-to-date
 
