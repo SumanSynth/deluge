@@ -26,7 +26,7 @@ Deluge will be available on HTTP port 8112 by default. Open your favorite browse
     sudo add-apt-repository ppa:deluge-team/ppa
     sudo apt install deluged deluge-webui
     sudo adduser --system --group deluge
-    sudo gpasswd -a idroot deluge
+    sudo gpasswd -a $USER deluge
     
 #### Step 3. Create Systemd Service.
 
