@@ -18,7 +18,7 @@ echo "****************************************************"
 
 sudo apt install deluged deluge-webui
 sudo adduser --system --group deluge
-sudo gpasswd -a idroot deluge
+sudo gpasswd -a $USER deluge
 
 echo "****************************************************"
 echo "Creating deluged.service"
