@@ -4,13 +4,13 @@ echo "*******************************************************"
 echo "Removing Deluge"
 echo "*******************************************************"
 
-systemctl stop deluged
-systemctl disable deluged
-rm /etc/systemd/system/deluged.service
+systemctl stop deluged.service
+systemctl disable deluged.service
+sudo rm /etc/systemd/system/deluged.service
 
-systemctl stop deluge-web
-systemctl disable deluge-web
-rm /etc/systemd/system/deluge-web.service
+systemctl stop deluge-web.service
+systemctl disable deluge-web.service
+sudo rm /etc/systemd/system/deluge-web.service
 systemctl daemon-reload
 systemctl reset-failed
 
