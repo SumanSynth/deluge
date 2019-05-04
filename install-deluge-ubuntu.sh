@@ -90,5 +90,6 @@ echo "Deluge will be available on HTTP port 8112 by default."
 echo "http://server-ip:8112."
 echo "Your IP address is:"
 curl ifconfig.me
+echo ":8112"
 echo "The default password for deluge is deluge."
 echo "****************************************************"
