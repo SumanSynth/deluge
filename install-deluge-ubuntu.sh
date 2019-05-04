@@ -4,7 +4,7 @@ echo "****************************************************"
 echo "Updating the package database"
 echo "****************************************************"
 
-sudo apt-get update
+sudo apt-get -q update
 
 echo "****************************************************"
 echo "Adding ppa:deluge-team/ppa"
@@ -16,7 +16,7 @@ echo "****************************************************"
 echo "Installing Deluge Bittorrent Client with Web Interface"
 echo "****************************************************"
 
-sudo apt install deluged deluge-webui curl
+sudo apt-get -yq install deluged deluge-webui curl
 sudo adduser --system --group deluge
 sudo gpasswd -a $USER deluge
 
