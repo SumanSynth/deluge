@@ -9,7 +9,10 @@ Open terminal and enter following commands:
     wget https://raw.githubusercontent.com/sumancvb/deluge/master/install-deluge-ubuntu.sh && sudo sh install-deluge-ubuntu.sh
 Deluge will be available on HTTP port 8112 by default. Open your favorite browser and navigate to http://yourdomain.com:8112 or http://server-ip:8112.  The default password for deluge is deluge, better change it when you are first to login.
 
+### Check services
 
+    sudo systemctl status deluge-web
+    sudo systemctl status deluge-web
 
 ## Method 2: Step by step guide
 Step 1. First make sure that all your system packages are up-to-date by running these following apt-get commands in the terminal.
